@@ -1,0 +1,18 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@(rows: Seq[models.CIModel.HelloRow])
+
+
+<table>
+@for(row <- rows){
+	<tr>
+	<td>@row.id</td>
+	<td>@row.name</td>
+	<td>@row.email</td>
+	<td>@row.age</td>
+	<td>@row.address</td>
+	</tr>
+}
+</table>
